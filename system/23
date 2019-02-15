@@ -1,0 +1,4 @@
+ssh session:
+ssh -p 2222 newuser@192.168.21.6
+With graphic session:
+Log out the current user > "select a new user" > enter password> login > VAULA

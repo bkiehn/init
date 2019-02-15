@@ -1,0 +1,16 @@
+#!/bin/bash
+
+ARGS=2
+
+if [ $# -ne "$ARGS" ]
+then
+	echo "usage: old file extension, new files extension"
+	exit 1
+fi
+
+for filename in *.$1
+do
+	mv $filename ${filename%$1}$2
+done
+
+exit 0

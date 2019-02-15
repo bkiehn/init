@@ -1,0 +1,2 @@
+ifconfig en0 | grep "broadcast" | cut -d " " -f6
+ping -c15 192.168.21.255 | grep from | awk '{print }' | cut -d : -f1 | sort -u
